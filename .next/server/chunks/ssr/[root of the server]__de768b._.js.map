@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 81, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/umang/OneDrive/Desktop/books/book-manager/src/pages/_app.js"],"sourcesContent":["import \"@/styles/globals.css\";\nimport { useRouter } from 'next/router';\nimport { useEffect } from 'react';\nimport { ToastContainer } from 'react-toastify';\nimport 'react-toastify/dist/ReactToastify.css';\n\nexport default function App({ Component, pageProps }) {\n  const router = useRouter();\n\n  useEffect(() => {    \n    if (typeof window !== 'undefined') {\n      const user = localStorage.getItem('token');      \n      if (user) {\n        if (router.asPath === '/login' || router.asPath === '/register') {\n          router.push('/');\n        }\n      } else {\n        if (router.asPath !== '/login' && router.asPath !== '/register') {\n          router.push('/login');\n        }\n      }\n    }\n  }, [router]);\n\n  return (\n    <>\n      <Component {...pageProps} />\n      <ToastContainer />\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;AACA;AACA;;;;;;;;;;;AAGe,SAAS,IAAI,EAAE,SAAS,EAAE,SAAS,EAAE;IAClD,MAAM,SAAS,CAAA,GAAA,uHAAA,CAAA,YAAS,AAAD;IAEvB,CAAA,GAAA,mGAAA,CAAA,YAAS,AAAD,EAAE;QACR,uCAAmC;;QAWnC;IACF,GAAG;QAAC;KAAO;IAEX,qBACE;;0BACE,qKAAC;gBAAW,GAAG,SAAS;;;;;;0BACxB,qKAAC,kIAAA,CAAA,iBAAc;;;;;;;AAGrB"}},
+    {"offset": {"line": 124, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

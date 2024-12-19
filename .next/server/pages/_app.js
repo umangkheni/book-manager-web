@@ -1,1 +1,6 @@
-(()=>{var r={};r.id=636,r.ids=[636],r.modules={3200:(r,e,t)=>{"use strict";t.a(r,async(r,s)=>{try{t.r(e),t.d(e,{default:()=>o});var i=t(8732);t(9361);var u=t(6715);t(2015);var a=t(4391);t(4467);var c=r([a]);function o({Component:r,pageProps:e}){return(0,u.useRouter)(),(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(r,{...e}),(0,i.jsx)(a.ToastContainer,{})]})}a=(c.then?(await c)():c)[0],s()}catch(r){s(r)}})},9361:()=>{},361:r=>{"use strict";r.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},2015:r=>{"use strict";r.exports=require("react")},2326:r=>{"use strict";r.exports=require("react-dom")},8732:r=>{"use strict";r.exports=require("react/jsx-runtime")},9021:r=>{"use strict";r.exports=require("fs")},7910:r=>{"use strict";r.exports=require("stream")},4075:r=>{"use strict";r.exports=require("zlib")},4391:r=>{"use strict";r.exports=import("react-toastify")}};var e=require("../webpack-runtime.js");e.C(r);var t=r=>e(e.s=r),s=e.X(0,[585,741],()=>t(3200));module.exports=s})();
+const CHUNK_PUBLIC_PATH = "server/pages/_app.js";
+const runtime = require("../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_28b3d9._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__de768b._.js");
+runtime.loadChunk("server/chunks/ssr/_cf1730._.css");
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_app.js [ssr] (ecmascript)", CHUNK_PUBLIC_PATH).exports;

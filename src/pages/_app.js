@@ -11,9 +11,13 @@ export default function App({ Component, pageProps }) {
     if (typeof window !== 'undefined') {
       const user = localStorage.getItem('token');      
       if (user) {
-        router.push('/');
+        if (router.asPath === '/login' || router.asPath === '/register') {
+          router.push('/');
+        }
       } else {
-        router.push('/login');
+        if (router.asPath !== '/login' && router.asPath !== '/register') {
+          router.push('/login');
+        }
       }
     }
   }, [router]);
